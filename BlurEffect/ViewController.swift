@@ -33,9 +33,14 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate(constraints)
     }
 
+    func dropShadow(view:UIView){
+        view.layer.shadowOpacity = 0.3
+        view.layer.shadowOffset = CGSize(width: 5, height: 5)
+        view.layer.shadowRadius = 5.0
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
 
