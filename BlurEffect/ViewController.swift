@@ -14,9 +14,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var stackView: UIStackView!
-    
+   
     
     // A function to layout a view behind another view
+    // assume both views exist in teh superview
     func layout(background:UIView, behind view:UIView, padding:CGFloat){
         var constraints = [NSLayoutConstraint]()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -34,7 +35,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
 
 
